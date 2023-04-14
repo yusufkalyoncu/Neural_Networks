@@ -89,9 +89,8 @@ Hopfield ağları, sinir ağı tasarımında birçok farklı uygulama için kull
 
 \subsection{(8 Puan)} \textbf{ChatGPT’nin açıklamalarından ne anladığınızı buraya kendi kelimelerinizle özetleyin. Örneğin ``Hopfield Network nedir? Ne işe yarar? Neden bilmemiz gerekir bunu? Gerçek hayatta kullanılıyor mu?'' gibi. Anlamadığınız kısımlar varsa ve ChatGPT’nin açıklamaları yeterli gelmezse internet dahil farklı kaynaklardan araştırıp, bilgilerin doğruluğunu sorgulamakta serbestsiniz. Konuyu doğru anlayıp anlamamanız puana etki edecektir. Kullandığınız kaynakları da belirtin!}
 
-Hopfield ağı, birçok alanda kullanılan bir yapay sinir ağı türüdür. Özellikle desen tanıma, veri sıkıştırma, optimizasyon, veri örneğinin tanınması ve doğrulanması, optimize edilen bir işlevin minimum veya maksimum değerlerinin bulunması için kullanılabilir.
-
-Hopfield ağları, geri beslemeli bir sinir ağı türüdür. Her bir hücre, diğer tüm hücrelerden input alır. Ağ, önceki durumuna geri dönmek için sürekli olarak tekrar eden bir döngü oluşturur. Bu da ağdaki her bir hücrenin diğer tüm hücrelerle bağlantılı olduğu anlamına gelir. Bu bağlantılar, ağırlık matrisi denilen bir matris aracılığıyla gerçekleştirilir.
+Hopfield ağı bir çok alanda kullanılan bir yapay sinir ağı türüdür. Desen tanıma, veri sıkıştırma, optimizasyon, optimize sonrası minimum veya maksimum değerlerin bulunması, veri örneğinin tanınması ve doğrulanması gibi bir çok konu üzerinde kullanılabilir.
+Bu ağlar geri beslemeli bir sinir ağı türüdür. Ağdaki her bir hücre diğer tüm hücrelerden girdi alır. Ağ, önceki durumuna geri dönmek için bir döngü oluşturur. Bu döngüler ağdaki her bir hücrenin diğer tüm hücrelerle bağlantılı olduğunu bizlere söyler. Bu bağlantılar, ağırlık matrisi denilen bir matris aracılığıyla gerçekleştirilir.
 
 
 \section{(Toplam 10 Puan) Boltzman Machine:}
@@ -111,11 +110,11 @@ Boltzmann makineleri, özellikle düşük boyutlu girdi verileri için etkilidir
 
 \subsection{(8 Puan)} \textbf{ChatGPT’nin açıklamalarından ne anladığınızı buraya kendi kelimelerinizle özetleyin. Örneğin ``Boltzman Machine nedir? Ne işe yarar? Neden bilmemiz gerekir bunu? Gerçek hayatta kullanılıyor mu?'' gibi. Anlamadığınız kısımlar varsa ve ChatGPT’nin açıklamaları yeterli gelmezse internet dahil farklı kaynaklardan araştırıp, bilgilerin doğruluğunu sorgulamakta serbestsiniz. Konuyu doğru anlayıp anlamamanız puana etki edecektir. Kullandığınız kaynakları da belirtin!}
 
-Boltzmann makineleri, girdi verilerinin olasılık dağılımını öğrenmek için kullanılan bir istatistiksel makine öğrenmesi modelidir. Bu makine, birbirine bağlı bir dizi nöron tarafından oluşturulur.
+Boltzman machines, input verilerinin olasılık dağılımını bulmak için kullanılan bir istatistiksel modeldir. Bu makine, birbirine bağlı bir dizi nöron tarafından oluşturulur.
 
-Boltzmann makinesi, bir enerji fonksiyonu kullanır. Bu enerji fonksiyonu, girilen verilerin enerji seviyesini hesaplayarak kullanılır. Makine, en yüksek olasılık dağılımını bulabilmek için enerji fonksiyonunu minimize etmeye çalışır.
+Boltzman makinesi, bir enerji fonksiyonu kullanır. Bu enerji fonksiyonu girilen inputların enerji seviyesini hesaplar. Makine, en yüksek olasılık dağılımını bulabilmek için bu enerji fonksiyonunun değerini minimize etmeyi amaçlar.
 
-Boltzmann makineleri, düşük boyutlu girdiler için uygun olsa da, büyük girdiler için performanssız olabilirler.
+Boltzman makineleri, düşük boyutlu inputlar için kullanışlı olsa da büyük boyutlu girdiler için kötü performansa sahip olabilir.
 
 
 \section{(Toplam 10 Puan) Markov Assumption ve Markov Chain:}
@@ -137,11 +136,13 @@ Bir Markov zinciri, "geçmiş bağımsızlığı" özelliği nedeniyle, çok say
 
 \subsection{(8 Puan)} \textbf{ChatGPT’nin açıklamalarından ne anladığınızı buraya kendi kelimelerinizle özetleyin. Örneğin ``Markov assumption ve Markov Chain nedir? Ne işe yarar? Neden bilmemiz gerekir bunu? Gerçek hayatta kullanılıyor mu?'' gibi. Anlamadığınız kısımlar varsa ve ChatGPT’nin açıklamaları yeterli gelmezse internet dahil farklı kaynaklardan araştırıp, bilgilerin doğruluğunu sorgulamakta serbestsiniz. Konuyu doğru anlayıp anlamamanız puana etki edecektir. Kullandığınız kaynakları da belirtin!}
 
-Markov zinciri, bir dizi rastgele değişkenin oluşturduğu bir süreçtir ve her bir değişkenin gelecekteki değeri, sadece o anki değerine bağlıdır. Markov zincirindeki her bir durum, durum uzayının bir elemanıdır ve zincirin her bir durumu, zincirdeki diğer durumlara geçiş yapabilen olasılıklarla ilişkilendirilir.
+Markov zinciri, bir dizi rastgele değişkenin oluşturmuş olduğu bir süreçtir. Markov zincirindeki her bir değişkenin gelecekteki değeri, sadece o anki değerine bağlıdır.
 
-Markov varsayımı, bir sistemin gelecekteki durumunun, yalnızca o anki durumuna bağlı olduğunu kabul eder. Bu varsayım, birçok farklı alanda kullanılır ve özellikle zaman serileri analizinde sıkça karşılaşılır.
+Markov zincirinde bir durum uzayı vardır ve zincirdeki her bir durum bu durum uzayının elemanıdır. Zincirin her bir durumu, diğer durumlara geçiş yapabilen olasılıklarla ilişkilendirilir.
 
-Markov zincirleri, doğrusal olmayan ve karmaşık sistemlerde kullanılabilen bir modelleme aracıdır. Özellikle zamanla değişen sistemlerin modellenmesi ve tahmin edilmesi için sıklıkla kullanılırlar.
+Markov varsayımı ise bir sistemin gelecekteki durumunun sadece o anki durumuna bağlı olduğunu söyler. Markov varsayımı birçok farklı alanda kullanılır. Özellikle zaman serilerinin analiz edilmesinde oldukça sık kullanılır.
+
+Markov zincirleri, Karmaşık, doğrusal olmayan sistemlerde kullanılan bir aracıdır. Özellikle zamanla değişen sistemlerin tahmin edilmesi ve modellenmesinde çokça kullanılır.
 
 \section{(Toplam 20 Puan) Feed Forward:}
  
